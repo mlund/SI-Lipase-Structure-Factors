@@ -1,0 +1,694 @@
+{
+    "temperature": 298.15,
+    "geometry": {
+        "type": "sphere",
+        "radius": 120
+    },
+    "mcloop": {
+        "macro": 10001,
+        "micro": 1000
+    },
+    "random": {
+        "seed": "hardware"
+    },
+    "energy": [
+        {
+            "nonbonded_coulomblj": {
+                "coulomb": {
+                    "type": "poisson",
+                    "C": 1,
+                    "D": -1,
+                    "debyelength": 9.38164367769519,
+                    "epsr": 78.7,
+                    "cutoff": 120
+                },
+                "lennardjones": {
+                    "mixing": "LB",
+                    "custom": {
+                        "BALA BALA": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BALA BILE": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BALA BLEU": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BALA BPRO": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BALA BPHE": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BALA BVAL": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BALA BTRP": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BILE BILE": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BILE BLEU": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BILE BPRO": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BILE BPHE": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BILE BVAL": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BILE BTRP": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BLEU BLEU": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BLEU BPRO": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BLEU BPHE": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BLEU BVAL": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BLEU BTRP": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BPHE BPHE": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BPHE BPRO": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BPHE BVAL": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BPHE BTRP": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BPRO BPRO": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BPRO BVAL": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BPRO BTRP": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BTRP BTRP": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BTRP BVAL": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        },
+                        "BVAL BVAL": {
+                            "sigma": 7.0,
+                            "eps": 1.0052560000000001
+                        }
+                    }
+                }
+            }
+        }
+    ],
+    "atomlist": [
+        {
+            "ASP": {
+                "eps": 0.12380000000000001,
+                "q": -1,
+                "sigma": 7.2,
+                "mw": 110
+            }
+        },
+        {
+            "CTR": {
+                "eps": 0.12380000000000001,
+                "q": -1,
+                "sigma": 4.0,
+                "mw": 16
+            }
+        },
+        {
+            "GLU": {
+                "eps": 0.12380000000000001,
+                "q": -1,
+                "sigma": 7.6,
+                "mw": 122
+            }
+        },
+        {
+            "HIS": {
+                "eps": 0.12380000000000001,
+                "q": 0.5,
+                "sigma": 7.8,
+                "mw": 130
+            }
+        },
+        {
+            "SHIS": {
+                "eps": 0.12380000000000001,
+                "q": 0.5,
+                "sigma": 7.8,
+                "mw": 130
+            }
+        },
+        {
+            "LSHIS": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.8,
+                "mw": 130
+            }
+        },
+        {
+            "NTR": {
+                "eps": 0.12380000000000001,
+                "q": 1,
+                "sigma": 4.0,
+                "mw": 14
+            }
+        },
+        {
+            "SNTR": {
+                "eps": 0.12380000000000001,
+                "q": 1,
+                "sigma": 4.0,
+                "mw": 14
+            }
+        },
+        {
+            "LSNTR": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 4.0,
+                "mw": 14
+            }
+        },
+        {
+            "TYR": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 8.2,
+                "mw": 154
+            }
+        },
+        {
+            "LYS": {
+                "eps": 0.12380000000000001,
+                "q": 1,
+                "sigma": 7.4,
+                "mw": 116
+            }
+        },
+        {
+            "SLYS": {
+                "eps": 0.12380000000000001,
+                "q": 1,
+                "sigma": 7.4,
+                "mw": 116
+            }
+        },
+        {
+            "LSLYS": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.4,
+                "mw": 116
+            }
+        },
+        {
+            "CYS": {
+                "eps": 0.12380000000000001,
+                "q": -1,
+                "sigma": 7.2,
+                "mw": 103
+            }
+        },
+        {
+            "CYT": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.2,
+                "mw": 103
+            }
+        },
+        {
+            "ARG": {
+                "eps": 0.12380000000000001,
+                "q": 1,
+                "sigma": 8.0,
+                "mw": 144
+            }
+        },
+        {
+            "SARG": {
+                "eps": 0.12380000000000001,
+                "q": 1,
+                "sigma": 8.0,
+                "mw": 144
+            }
+        },
+        {
+            "LSARG": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 8.0,
+                "mw": 144
+            }
+        },
+        {
+            "ALA": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 6.2,
+                "mw": 66
+            }
+        },
+        {
+            "BALA": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 6.2,
+                "mw": 66
+            }
+        },
+        {
+            "LBALA": {
+                "eps": 0.12380000000000001,
+                "q": -1,
+                "sigma": 6.2,
+                "mw": 66
+            }
+        },
+        {
+            "ILE": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.4,
+                "mw": 102
+            }
+        },
+        {
+            "BILE": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.4,
+                "mw": 102
+            }
+        },
+        {
+            "LBILE": {
+                "eps": 0.12380000000000001,
+                "q": -1,
+                "sigma": 7.4,
+                "mw": 102
+            }
+        },
+        {
+            "LEU": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.4,
+                "mw": 102
+            }
+        },
+        {
+            "BLEU": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.4,
+                "mw": 102
+            }
+        },
+        {
+            "LBLEU": {
+                "eps": 0.12380000000000001,
+                "q": -1,
+                "sigma": 7.4,
+                "mw": 102
+            }
+        },
+        {
+            "MET": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.6,
+                "mw": 122
+            }
+        },
+        {
+            "PHE": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.8,
+                "mw": 138
+            }
+        },
+        {
+            "BPHE": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.8,
+                "mw": 138
+            }
+        },
+        {
+            "LBPHE": {
+                "eps": 0.12380000000000001,
+                "q": -1,
+                "sigma": 7.8,
+                "mw": 138
+            }
+        },
+        {
+            "PRO": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 6.8,
+                "mw": 90
+            }
+        },
+        {
+            "BPRO": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 6.8,
+                "mw": 90
+            }
+        },
+        {
+            "LBPRO": {
+                "eps": 0.12380000000000001,
+                "q": -1,
+                "sigma": 6.8,
+                "mw": 90
+            }
+        },
+        {
+            "TRP": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 8.6,
+                "mw": 176
+            }
+        },
+        {
+            "BTRP": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 8.6,
+                "mw": 176
+            }
+        },
+        {
+            "LBTRP": {
+                "eps": 0.12380000000000001,
+                "q": -1,
+                "sigma": 8.6,
+                "mw": 176
+            }
+        },
+        {
+            "VAL": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 6.8,
+                "mw": 90
+            }
+        },
+        {
+            "BVAL": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 6.8,
+                "mw": 90
+            }
+        },
+        {
+            "LBVAL": {
+                "eps": 0.12380000000000001,
+                "q": -1,
+                "sigma": 6.8,
+                "mw": 90
+            }
+        },
+        {
+            "SER": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 6.6,
+                "mw": 82
+            }
+        },
+        {
+            "THR": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.0,
+                "mw": 94
+            }
+        },
+        {
+            "ASN": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.2,
+                "mw": 108
+            }
+        },
+        {
+            "GLN": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 7.4,
+                "mw": 120
+            }
+        },
+        {
+            "GLY": {
+                "eps": 0.12380000000000001,
+                "q": 0,
+                "sigma": 5.8,
+                "mw": 54
+            }
+        },
+        {
+            "MAN": {
+                "eps": 0.01238,
+                "q": 0,
+                "sigma": 5.8,
+                "mw": 108
+            }
+        }
+    ],
+    "moleculelist": [
+        {
+            "protein1": {
+                "traj": "/home/marpoli/Work/2_TLL/B2/tll-close_open.pqr",
+                "insdir": [
+                    0,
+                    0,
+                    0
+                ],
+                "insoffset": [
+                    0,
+                    0,
+                    0
+                ],
+                "keepcharges": true
+            }
+        },
+        {
+            "protein2": {
+                "traj": "/home/marpoli/Work/2_TLL/B2/tll-close_open.pqr",
+                "insdir": [
+                    0,
+                    0,
+                    0
+                ],
+                "insoffset": [
+                    0,
+                    0,
+                    50
+                ],
+                "keepcharges": true
+            }
+        }
+    ],
+    "insertmolecules": [
+        {
+            "protein1": {
+                "N": 1,
+                "inactive": false
+            }
+        },
+        {
+            "protein2": {
+                "N": 1,
+                "inactive": false
+            }
+        }
+    ],
+    "moves": [
+        {
+            "conformationswap": {
+                "molecule": "protein1",
+                "repeat": 1
+            }
+        },
+        {
+            "conformationswap": {
+                "molecule": "protein2",
+                "repeat": 1
+            }
+        },
+        {
+            "moltransrot": {
+                "molecule": "protein1",
+                "dir": [
+                    0,
+                    0,
+                    0
+                ],
+                "dprot": 1,
+                "dp": 0,
+                "repeat": 1
+            }
+        },
+        {
+            "moltransrot": {
+                "molecule": "protein2",
+                "dir": [
+                    0,
+                    0,
+                    1
+                ],
+                "dprot": 1,
+                "dp": 15,
+                "repeat": 1
+            }
+        }
+    ],
+    "analysis": [
+        {
+            "qrfile": {
+                "nstep": 1000,
+                "nskip": 1000
+            }
+        },
+        {
+            "density": {
+                "nstep": 1000,
+                "nskip": 1000
+            }
+        },
+        {
+            "multipole": {
+                "nstep": 1000,
+                "nskip": 1000
+            }
+        },
+        {
+            "savestate": {
+                "file": "state.json"
+            }
+        },
+        {
+            "savestate": {
+                "file": "confout.pqr"
+            }
+        },
+        {
+            "xtcfile": {
+                "file": "traj.xtc",
+                "nstep": 1000,
+                "nskip": 1000
+            }
+        },
+        {
+            "systemenergy": {
+                "file": "energy.dat",
+                "nstep": 1000,
+                "nskip": 1000
+            }
+        },
+        {
+            "virtualtranslate": {
+                "file": "vt.dat",
+                "dL": 0.2,
+                "molecule": "protein2",
+                "nstep": 1,
+                "dir": [
+                    0,
+                    0,
+                    1
+                ],
+                "nskip": 1000
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "R.dat",
+                "nstep": 1,
+                "type": "molecule",
+                "property": "com_z",
+                "index": 1,
+                "nskip": 1000
+            }
+        },
+        {
+            "moleculeconformation": {
+                "molecule": "protein1",
+                "nstep": 1,
+                "nskip": 1000
+            }
+        },
+        {
+            "moleculeconformation": {
+                "molecule": "protein2",
+                "nstep": 1,
+                "nskip": 1000
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "file": "Q_total.dat",
+                "nstep": 1000,
+                "type": "system",
+                "property": "Q",
+                "nskip": 1000
+            }
+        }
+    ]
+}
