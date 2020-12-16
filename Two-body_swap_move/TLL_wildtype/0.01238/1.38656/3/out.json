@@ -1,0 +1,488 @@
+{
+    "analysis": [
+        {
+            "qrfile": {
+                "file": "qrtraj.dat",
+                "nskip": 1000,
+                "nstep": 1000,
+                "samples": 10000
+            }
+        },
+        {
+            "density": {
+                "atomic": null,
+                "molecular": {
+                    "protein1": {
+                        "c/M": 0.00022941247026599302
+                    },
+                    "protein2": {
+                        "c/M": 0.00022941247026599302
+                    }
+                },
+                "nskip": 1000,
+                "nstep": 1000,
+                "samples": 10000,
+                "∛⟨V⟩": 193.4,
+                "⟨1/V⟩": 1.382e-07,
+                "⟨V⟩": 7238000.0,
+                "⟨∛V⟩": 193.4
+            }
+        },
+        {
+            "multipole": {
+                "molecules": {
+                    "protein1": {
+                        "C": 0.0,
+                        "Z": -7.0,
+                        "Z2": 49.0,
+                        "μ": 244.17432575831694,
+                        "μ²": 59627.389208103574
+                    },
+                    "protein2": {
+                        "C": 0.0,
+                        "Z": -7.0,
+                        "Z2": 49.0,
+                        "μ": 244.08861456330334,
+                        "μ²": 59586.42713363183
+                    }
+                },
+                "nskip": 1000,
+                "nstep": 1000,
+                "samples": 10000
+            }
+        },
+        {
+            "savestate": {
+                "file": "state.json"
+            }
+        },
+        {
+            "savestate": {
+                "file": "confout.pqr"
+            }
+        },
+        {
+            "xtcfile": {
+                "file": "traj.xtc",
+                "nskip": 1000,
+                "nstep": 1000,
+                "samples": 10000
+            }
+        },
+        {
+            "systemenergy": {
+                "Cv/kB": 9948300.0,
+                "file": "energy.dat",
+                "final": [
+                    0.0,
+                    0.0,
+                    34176.94388800711
+                ],
+                "init": 42731.0,
+                "mean": 35087.0,
+                "nskip": 1000,
+                "nstep": 1000,
+                "samples": 10000
+            }
+        },
+        {
+            "virtualtranslate": {
+                "dL": 0.2,
+                "dir": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "force": -0.012709837738308806,
+                "nskip": 1000,
+                "nstep": 1,
+                "relative time": 0.199,
+                "samples": 10000000
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "average": 39.510483513611284,
+                "file": "R.dat",
+                "index": 1,
+                "nskip": 1000,
+                "nstep": 1,
+                "property": "com_z",
+                "samples": 10000000,
+                "type": "molecule"
+            }
+        },
+        {
+            "moleculeconformation": {
+                "histogram": [
+                    [
+                        0,
+                        3713100
+                    ],
+                    [
+                        1,
+                        6286900
+                    ]
+                ],
+                "nskip": 1000,
+                "nstep": 1,
+                "samples": 10000000
+            }
+        },
+        {
+            "moleculeconformation": {
+                "histogram": [
+                    [
+                        0,
+                        3596754
+                    ],
+                    [
+                        1,
+                        6403246
+                    ]
+                ],
+                "nskip": 1000,
+                "nstep": 1,
+                "samples": 10000000
+            }
+        },
+        {
+            "reactioncoordinate": {
+                "average": -14.0,
+                "file": "Q_total.dat",
+                "nskip": 1000,
+                "nstep": 1000,
+                "property": "Q",
+                "samples": 10000,
+                "type": "system"
+            }
+        }
+    ],
+    "compiler": "9.3.0",
+    "energy": [
+        {
+            "hamiltonian": [
+                {
+                    "ContainerOverlap": {
+                        "relative time": 7.961807047604859e-05
+                    }
+                },
+                {
+                    "particle-self-energy": {
+                        "com": false,
+                        "molecules": [
+                            "*"
+                        ],
+                        "relative time": 0.00019962991658167793
+                    }
+                },
+                {
+                    "nonbonded": {
+                        "cutoff_g2g": {
+                            "protein1 protein1": 1.797693134862316e+308,
+                            "protein2 protein1": 1.797693134862316e+308,
+                            "protein2 protein2": 1.797693134862316e+308
+                        },
+                        "pairpot": [
+                            {
+                                "coulomb": {
+                                    "C": 1,
+                                    "D": -1,
+                                    "cutoff": 120.0,
+                                    "debyelength": 9.38164367769519,
+                                    "doi": "10/c5fr",
+                                    "lB": 7.121420410850907,
+                                    "type": "poisson"
+                                }
+                            },
+                            {
+                                "lennardjones": {
+                                    "custom": [
+                                        {
+                                            "BALA BALA": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BALA BILE": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BALA BLEU": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BALA BPHE": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BALA BPRO": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BALA BTRP": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BALA BVAL": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BILE BILE": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BILE BLEU": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BILE BPHE": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BILE BPRO": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BILE BTRP": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BILE BVAL": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BLEU BLEU": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BLEU BPHE": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BLEU BPRO": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BLEU BTRP": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BLEU BVAL": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BPHE BPHE": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BPHE BPRO": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BPHE BTRP": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BPHE BVAL": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BPRO BPRO": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BPRO BTRP": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BPRO BVAL": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BTRP BTRP": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BTRP BVAL": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        },
+                                        {
+                                            "BVAL BVAL": {
+                                                "eps": 1.38656,
+                                                "sigma": 7.0
+                                            }
+                                        }
+                                    ],
+                                    "eps": "eps",
+                                    "mixing": "lorentz_berthelot",
+                                    "sigma": "sigma"
+                                }
+                            }
+                        ],
+                        "relative time": 0.5966167780080064,
+                        "timings": {
+                            "g_internal": 9.766487551748503e-05
+                        }
+                    }
+                }
+            ]
+        }
+    ],
+    "geometry": {
+        "radius": 120.0,
+        "type": "sphere"
+    },
+    "git revision": "b86d549 (2020-09-08)",
+    "groups": [
+        {
+            "protein1": {
+                "compressible": false,
+                "index": [
+                    0,
+                    271
+                ],
+                "size": 272
+            }
+        },
+        {
+            "protein2": {
+                "compressible": false,
+                "index": [
+                    272,
+                    543
+                ],
+                "size": 272
+            }
+        }
+    ],
+    "last move": "moltransrot",
+    "moves": [
+        {
+            "conformationswap": {
+                "acceptance": 0.0712,
+                "keeppos": false,
+                "molecule": "protein1",
+                "molid": 0,
+                "moves": 10003802,
+                "relative time": 0.2,
+                "repeat": 1
+            }
+        },
+        {
+            "conformationswap": {
+                "acceptance": 0.0694,
+                "keeppos": false,
+                "molecule": "protein2",
+                "molid": 1,
+                "moves": 9999017,
+                "relative time": 0.2,
+                "repeat": 1
+            }
+        },
+        {
+            "moltransrot": {
+                "acceptance": 0.162,
+                "dir": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "dirrot": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "dp": 0.0,
+                "dprot": 1.0,
+                "molecule": "protein1",
+                "molid": 0,
+                "moves": 10002683,
+                "relative time": 0.2,
+                "repeat": 1,
+                "√⟨r²⟩": 0.0
+            }
+        },
+        {
+            "moltransrot": {
+                "acceptance": 0.0664,
+                "dir": [
+                    0.0,
+                    0.0,
+                    1.0
+                ],
+                "dirrot": [
+                    0.0,
+                    0.0,
+                    0.0
+                ],
+                "dp": 15.0,
+                "dprot": 1.0,
+                "molecule": "protein2",
+                "molid": 1,
+                "moves": 9998498,
+                "relative time": 0.199,
+                "repeat": 1,
+                "√⟨r²⟩": 2.05
+            }
+        }
+    ],
+    "number of groups": 2,
+    "number of particles": 544,
+    "reactionlist": null,
+    "relative drift": -0.19955417922007399,
+    "temperature": 298.15
+}
