@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/296540544.svg)](https://zenodo.org/badge/latestdoi/296540544)
+
 # Electronic notebooks: Anisotropic Protein-Protein Interactions in Dilute and Concentrated Solutions
 
 Supporting information for reproducing results presented in the above manuscript which is currently
