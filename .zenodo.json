@@ -1,0 +1,64 @@
+{
+    "title": "Electronic Notebook: Anisotropic Pprotein-protein interactions in dilute and concentrated solutions",
+    "description": "This repository contains electronic notebooks (Jupyter) for reproducing the simulation results and analysis in the above titled scientific work",
+    "creators": [
+        {
+            "name": "Coralie Pasquier",
+            "affiliation": "Institut de Chimie Séparative de Marcoule (ICSM), Paris, France",
+            "orcid": "0000-0003-2135-4900"
+        },
+        {
+            "name": "Søren Midtgaard",
+            "affiliation": "University of Copenhagen, Denmark",
+            "orcid": "0000-0001-6694-0626"
+        },
+        {
+            "name": "Marco Polimeni",
+            "affiliation": "Division of Theoretical Chemistry, Department of Chemistry, Lund University, Sweden",
+            "orcid": "0000-0002-9670-7232"
+        },
+        {
+            "name": "Christian Isak Jørgensen",
+            "affiliation": "Novozymes A/S, Denmark"
+        },
+        {
+            "name": "Lise Arleth",
+            "affiliation": "University of Copenhagen, Denmark",
+            "orcid": "0000-0002-4694-4299"
+        },
+        {
+            "name": "Thomas Callisen",
+            "affiliation": "Novozymes A/S, Denmark"
+        },
+        {
+            "name": "Mikael Lund",
+            "affiliation": "Division of Theoretical Chemistry, Department of Chemistry, Lund University, Sweden",
+            "orcid": "0000-0001-8178-8175"
+        }
+    ],
+    "keywords": [
+        "reproducible science",
+        "electronic notebooks",
+        "monte carlo",
+        "protein-protein interactions",
+        "molecular simulation",
+        "small-angle x-ray scattering"
+    ],
+    "related_identifiers": [
+        {
+            "scheme": "url",
+            "identifier": "https://github.com/mlund/SI-Lipase-Structure-Factors",
+            "relation": "isSupplementTo"
+        },
+        {
+            "scheme": "doi",
+            "identifier": "10.1016/j.jcis.2022.08.054",
+            "relation": "isSupplementTo"
+        }
+    ],
+    "license": {
+        "id": "CC0-1.0"
+    },
+    "access_right": "open",
+    "upload_type": "software"
+}
