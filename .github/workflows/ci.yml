@@ -1,0 +1,30 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+      - run: uv sync --locked
+      - run: uv run ruff check
+      - run: uv run ruff format --check
+      - name: Validate Zenodo metadata
+        run: >
+          uvx check-jsonschema
+          --schemafile https://raw.githubusercontent.com/zenodo/zenodo/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.json
+          .zenodo.json
+      - name: Validate CITATION.cff
+        run: uvx cffconvert --validate
+      # Reproducibility: every analysis notebook must run from a clean checkout.
+      - name: Execute analysis notebooks
+        env:
+          MPLBACKEND: Agg
+        run: |
+          for nb in experiments/plot_*.ipynb onebody/*.ipynb \
+                    twobody/noswap/plot_*.ipynb twobody/swap/Analysis_*.ipynb \
+                    manybody/noswap/plot_*.ipynb manybody/swap/analysis_*.ipynb; do
+            echo "::group::$nb"
+            uv run jupyter nbconvert --to notebook --execute --output-dir /tmp/nbout "$nb"
+            echo "::endgroup::"
+          done
