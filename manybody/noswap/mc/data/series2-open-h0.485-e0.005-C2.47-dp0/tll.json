@@ -9,8 +9,7 @@
                 "coulomb": {
                     "epsr": 78.7,
                     "type": "yukawa",
-                    "debyelength": 9.38164367769519,
-                    "cutoff": 46.908218388475944
+                    "debyelength": 9.38164367769519
                 },
                 "lennardjones": {
                     "mixing": "LB",
@@ -614,7 +613,7 @@
             "protein": {
                 "rigid": true,
                 "keepcharges": true,
-                "structure": "../1ein_open.aam"
+                "structure": "../../1ein_open.aam"
             }
         }
     ],
@@ -681,7 +680,7 @@
                 "molecules": [
                     "protein"
                 ],
-                "nstep": 20,
+                "nstep": 1,
                 "com": true,
                 "scheme": "explicit",
                 "pmax": 200
@@ -690,12 +689,17 @@
         {
             "xtcfile": {
                 "file": "traj.xtc",
-                "nstep": 1000
+                "nstep": 1
             }
         },
         {
             "savestate": {
                 "file": "confout.pqr"
+            }
+        },
+        {
+            "savestate": {
+                "file": "confout.xyz"
             }
         },
         {
@@ -706,7 +710,7 @@
     ],
     "temperature": 298.15,
     "random": {
-        "seed": "default"
+        "seed": "fixed"
     },
     "geometry": {
         "type": "cuboid",
@@ -718,6 +722,6 @@
     },
     "mcloop": {
         "macro": 10,
-        "micro": 10000
+        "micro": 5000
     }
 }

@@ -1,0 +1,27 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "plot-csv"
+version = "0.1.0"
+description = "Quick XY plots from one or more CSV / whitespace data files."
+requires-python = ">=3.8"
+license = "GPL-3.0-or-later"
+license-files = ["LICENSE"]
+authors = [{ name = "Mikael Lund" }]
+keywords = ["cli", "plotting", "csv", "matplotlib"]
+dependencies = [
+    "numpy",
+    "matplotlib",
+]
+
+[project.scripts]
+plot_csv = "plot_csv:main"
+
+[project.urls]
+Gist = "https://gist.github.com/mlund/e1a7a530a84aef60b3e1cafdd726f9f3"
+
+# Single-module project: ship plot_csv.py as a top-level module.
+[tool.hatch.build.targets.wheel]
+include = ["plot_csv.py"]
