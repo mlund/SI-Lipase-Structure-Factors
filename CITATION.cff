@@ -1,0 +1,56 @@
+# GitHub's "Cite this repository" reads this; Zenodo reads .zenodo.json instead, so keep both in sync.
+cff-version: 1.2.0
+message: "If you use this material, please cite the article below."
+title: "Electronic Notebook: Anisotropic protein-protein interactions in dilute and concentrated solutions"
+type: software
+version: 2.0.0
+license: MIT
+repository-code: "https://github.com/mlund/SI-Lipase-Structure-Factors"
+authors: &authors
+  - family-names: Pasquier
+    given-names: Coralie
+    affiliation: "Institut de Chimie Séparative de Marcoule (ICSM), Paris, France"
+    orcid: "https://orcid.org/0000-0003-2135-4900"
+  - family-names: Midtgaard
+    given-names: Søren
+    affiliation: "University of Copenhagen, Denmark"
+    orcid: "https://orcid.org/0000-0001-6694-0626"
+  - family-names: Polimeni
+    given-names: Marco
+    affiliation: "Division of Theoretical Chemistry, Department of Chemistry, Lund University, Sweden"
+    orcid: "https://orcid.org/0000-0002-9670-7232"
+  - family-names: Jørgensen
+    given-names: Christian Isak
+    affiliation: "Novozymes A/S, Denmark"
+  - family-names: Arleth
+    given-names: Lise
+    affiliation: "University of Copenhagen, Denmark"
+    orcid: "https://orcid.org/0000-0002-4694-4299"
+  - family-names: Callisen
+    given-names: Thomas
+    affiliation: "Novozymes A/S, Denmark"
+  - family-names: Lund
+    given-names: Mikael
+    affiliation: "Division of Theoretical Chemistry, Department of Chemistry, Lund University, Sweden"
+    orcid: "https://orcid.org/0000-0001-8178-8175"
+keywords:
+  - reproducible science
+  - electronic notebooks
+  - monte carlo
+  - protein-protein interactions
+  - molecular simulation
+  - small-angle x-ray scattering
+  - Faunus
+  - structure factor
+  - second virial coefficient
+  - lipase
+preferred-citation:
+  type: article
+  title: "Anisotropic protein-protein interactions in dilute and concentrated solutions"
+  journal: "Journal of Colloid and Interface Science"
+  year: 2023
+  volume: 629
+  start: 794
+  end: 804
+  doi: "10.1016/j.jcis.2022.08.054"
+  authors: *authors
