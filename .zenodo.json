@@ -1,6 +1,6 @@
 {
     "title": "Electronic Notebook: Anisotropic protein-protein interactions in dilute and concentrated solutions",
-    "description": "This repository contains electronic notebooks (Jupyter) for reproducing the simulation results and analysis in the above titled scientific work",
+    "description": "Electronic notebooks (Jupyter), simulation input and output, and experimental SAXS data for reproducing the results in Pasquier et al., Anisotropic protein-protein interactions in dilute and concentrated solutions, J. Colloid Interface Sci. (2022). Covers salt excess chemical potentials, two-body potentials of mean force and second virial coefficients, and many-body structure factors from Metropolis Monte Carlo simulations of Thermomyces lanuginosus lipase. Version 2 adds a uv-managed Python environment, documents data formats and units, and makes all analysis notebooks run from a clean checkout. Code: MIT; data: CC-BY-4.0.",
     "creators": [
         {
             "name": "Coralie Pasquier",
@@ -42,7 +42,11 @@
         "monte carlo",
         "protein-protein interactions",
         "molecular simulation",
-        "small-angle x-ray scattering"
+        "small-angle x-ray scattering",
+        "Faunus",
+        "structure factor",
+        "second virial coefficient",
+        "lipase"
     ],
     "related_identifiers": [
         {
@@ -53,12 +57,11 @@
         {
             "scheme": "doi",
             "identifier": "10.1016/j.jcis.2022.08.054",
-            "relation": "isSupplementTo"
+            "relation": "isSupplementTo",
+            "resource_type": "publication-article"
         }
     ],
-    "license": {
-        "id": "CC0-1.0"
-    },
+    "license": "MIT",
     "access_right": "open",
-    "upload_type": "software"
+    "upload_type": "workflow"
 }
